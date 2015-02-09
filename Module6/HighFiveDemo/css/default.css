@@ -1,0 +1,162 @@
+﻿body {
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+@font-face {
+	src: url('/fonts/GILBI___.TTF') format('truetype'), url('/fonts/GILB____.TTF') format('truetype'), url('/fonts/GILC____.TTF') format('truetype'), url('/fonts/GILI____.TTF') format('truetype'), url('/fonts/GILLUBCD.TTF') format('truetype'), url('/fonts/GILSANUB.TTF') format('truetype'), url('/fonts/GIL_____.TTF') format('truetype'), url('/fonts/GLSNECB.TTF') format('truetype');
+	font-family: GILBI___;
+}
+
+.ms-grid
+{
+    display: -ms-grid;
+    -ms-grid-rows: 189fr 112fr 139fr 207fr 120fr;
+    -ms-grid-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+#postScoreButton {
+	-ms-grid-column-span: 1;
+	-ms-grid-row-span: 1;
+}
+
+#highScoreLabel {
+	font-family: Impact;
+	font-size: 2em;
+	color: white;
+	text-shadow: 1px 1px 5px #666;
+	margin-top: -104px;
+	margin-left: 50px;
+	display: -ms-grid;
+	width: 322.7px;
+}
+
+.ms-gridOuter {
+	display: -ms-grid;
+	-ms-grid-rows: 1fr;
+	-ms-grid-columns: 1fr;
+	width:100%;
+	height: 100%;
+	
+}
+
+.ms-gridInner {
+	display: -ms-grid;
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	
+}
+
+.imageClass1 {
+	transform: rotate(0deg);
+    transition-property: transform;
+    transition-duration: 250ms;
+
+}
+
+.imageClass2 {
+	transform: rotate(90deg);
+           transition-property: transform;
+       transition-duration: 250ms;
+
+}
+
+.imageClass3 {
+	transform: rotate(180deg);
+           transition-property: transform;
+       transition-duration: 250ms;
+
+}
+
+.imageClass4 {
+	transform: rotate(270deg);
+           transition-property: transform;
+       transition-duration: 250ms;
+
+}
+
+.init {
+	font-family: Impact;
+	font-size: 4em;
+	display: -ms-grid;
+	height: 217px;
+	-ms-grid-rows: 71px 1fr 71px;
+	-ms-grid-columns: 2fr 71px 71px 71px 3fr;
+}
+
+.normalInit {
+	color: white;
+	font-size: 70pt;
+	font-family: 'Gill Sans Ultra Bold Condensed';
+}
+
+.visible {
+	visibility: visible;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.editting {
+	font-size: 1.2em;
+	color: #FF8706;
+}
+
+.leaderboard {
+	font-family: 'Gill Sans Ultra Bold Condensed';
+	font-size: 20pt;
+	color: #F09F9F !important;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.scoreText {
+	font-family: 'Gill Sans Ultra Bold Condensed';
+	font-size: 1.8em;
+	color: #FBFBFB;
+}
+
+#resetButton {
+	font-family: 'Arial Black';
+	font-size: 2em;
+	margin: 12px;
+	visibility: visible;
+}
+
+#rightGrid {
+	-ms-grid-rows: 1fr 1fr 1fr;
+	display: -ms-grid;
+}
+
+#gameBoard img {
+	width: 100%;
+	height: 100%;
+}
+
+#bottomBar {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    overflow: hidden;    
+    text-align: center;
+    z-index: 101;
+    color: #ffffff;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -o-user-select: none;
+}

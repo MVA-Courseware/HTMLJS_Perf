@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>High Five Yeah!</title>
+    <link href="css/ui-light.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+
+</head>
+
+<body style="background-image: url('images/BG-gameboard.png');">
+    <div class="ms-grid" style="-ms-grid-columns: 1fr 768px 1fr !important; -ms-grid-rows: 48fr 768px 92fr !important; width: 100%; height: 100%;">
+        <div id="leftGrid" class="ms-grid" style="-ms-grid-row-span: 3;">
+            <div style="-ms-grid-row: 1;">
+                <img alt="logo" src="images/logo.png" style="margin-top: 20px; margin-left: 20px;">
+                <img alt="jodi-Mia-small" src="images/jodi-Mia-small.png" style="margin-top: 20px; margin-left: 50px; transform: scale(1, 1);">
+                <div class="controlLine" style="margin-top: 20px; margin-left: 30px;">
+                    <label style="font-family: 'Gill Sans Ultra Bold Condensed'; font-size: 20pt; color: #cdcdcd;">Select Matrix Size</label>
+                    <input id="gridSizeSelector" class="hiddenControl" type="range" min="8" max="26" step="2" value="16" />
+                </div>
+                <div class="controlLine" style="margin-top: 20px; margin-left: 30px;">
+                    <label style="font-family: 'Gill Sans Ultra Bold Condensed'; font-size: 20pt; color: #cdcdcd;">Benchmark Mode</label>
+                    <input id="benchmarkBox" class="hiddenControl" type="checkbox" />
+                </div>
+            </div>
+            <div id="bottomBar">
+                <div id="fpsMeterBox">
+                    <div id="fpsMeter">&nbsp;</div>
+                    <div id="fpsDetails">&nbsp;</div>
+                </div>
+                <div id="infoPanel">&nbsp;</div>
+            </div>
+
+        </div>
+        <div id="gameBoard" class="ms-gridInner" style="-ms-grid-column: 2; -ms-grid-row: 2; border-width: 1px; border-style: solid;">
+        </div>
+        <div id="rightGrid" class="rightGrid" style="-ms-grid-column: 3; -ms-grid-row: 1; -ms-grid-row-span: 3; -ms-grid-rows: 192fr 150fr 308fr 117fr;">
+            <div>
+                <div>
+                    <div id="gScore" class="scoreText" style="font-size: 113pt; text-align: center; height: 156.26px; margin-left: 75px;">000</div>
+                    <div class="scoreText">
+                        <img alt="text-highfives" src="images/text-highfives.png" style="margin-left: 100px;">
+                    </div>
+                    <div id="rScore" class="scoreText" style="font-size: 50pt; text-align:left; color: #F09F9F; height: 70.04px; margin-left: 140px; margin-top: 100px">000</div>
+                    <div class="scoreText">
+                        <img alt="text-record" style="-ms-grid-column: 5; margin-left: 140px;" src="images/text-record.png">
+                    </div>
+
+                </div>
+                <div>
+                    <img id="resetButton" alt="BTN-DoseyDoe-Reset" style="-ms-grid-column: 2; height: 62.43px; width: 223px; margin-top: 25px; margin-left: 100px; margin-top: 200px" src="images/BTN-DoseyDoe-Reset.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; background: yellow; right: 0; top: 0;" id="log"></div>
+    <audio id="backgroundAudioLoop" src="sounds/backgroundsoundloop.mp3" autoplay="" loop="" preload="auto"></audio>
+    <audio id="clapSound" src="sounds/clap.mp3" msrealtime="true" preload="auto"></audio>
+    <audio id="yeahSound" src="sounds/yeah.mp3" msrealtime="true" preload="auto"></audio>
+    <audio id="highFiveYeahSound" src="sounds/HighFiveYeah.mp3" msrealtime="true" preload="auto"></audio>
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/HighFiveYeah.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/fpsmeter.js"></script>
+</body>
+</html>

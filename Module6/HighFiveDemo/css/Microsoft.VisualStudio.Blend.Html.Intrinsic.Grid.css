@@ -1,0 +1,33 @@
+﻿.ms-grid
+{
+    display: -ms-grid;
+    -ms-grid-rows: 189fr 112fr 139fr 207fr 120fr;
+    -ms-grid-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+#postScoreButton {
+	-ms-grid-column-span: 1;
+	-ms-grid-row-span: 1;
+}
+
+#highScoreLabel {
+	font-family: Impact;
+	font-size: 2em;
+	color: white;
+	text-shadow: 1px 1px 5px #666;
+	margin-top: -104px;
+	margin-left: 50px;
+	display: -ms-grid;
+	width: 322.7px;
+}
+
+#gameBoard {
+}
+
+@font-face {
+	src: url('/fonts/GILBI___.TTF') format('truetype'), url('/fonts/GILB____.TTF') format('truetype'), url('/fonts/GILC____.TTF') format('truetype'), url('/fonts/GILI____.TTF') format('truetype'), url('/fonts/GILLUBCD.TTF') format('truetype'), url('/fonts/GILSANUB.TTF') format('truetype'), url('/fonts/GIL_____.TTF') format('truetype'), url('/fonts/GLSNECB.TTF') format('truetype');
+	font-family: GILBI___;
+}
+
