@@ -1,5 +1,5 @@
 * Modular JavaScript Demo 
-  
+  * Test AMD load
 * Measure number of DOM objects
   * At IE browser, invoke site http://es5.github.io/
   * Open IE 12 tool, at Console: type document.querySelectorAll('*').length
