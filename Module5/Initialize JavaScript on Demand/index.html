@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>AMD example</title>
+</head>
+<body>
+<script src="require.js"></script>
+<script>
+require({
+  'paths': {
+    'example': './example'
+  }
+}, ['example'], function(example) {
+  alert('Hello from "' + example + '"');
+});
+</script>
+</body>
+</html>
