@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Independent Animation</title>
+
+	<link rel="stylesheet" href="demo.css">
+
+	<style>
+		html, body {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+			font-family: Tahoma, Verdana, Arial;
+		}
+
+		#spinner {
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			border: 1px solid #000000;
+			background-color: #c0c0c0;
+			animation-name: spinner;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-duration: 0.6s;
+		}
+
+		@keyframes spinner {
+			from { 
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+    <div id="wrap">
+      <div class="container">
+        <div class="page-header">
+          	<h1>Independent Animation with CSS</h1>
+        </div>
+        <div id="spinner"></div>
+      </div>
+    </div>
+
+</body>
+</html>
+

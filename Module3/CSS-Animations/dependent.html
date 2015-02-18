@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Dependent Animation</title>
+
+    <link rel="stylesheet" href="demo.css">
+
+	<style>
+		html, body {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+			font-family: Tahoma, Verdana, Arial;
+		}
+		#spinner {
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			border: 1px solid #000000;
+			background-color: #c0c0c0;
+		}
+	</style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div class="container">
+            <div class="page-header">
+                <h1>Dependent Animation with JavaScript</h1>
+            </div>
+
+            <div id="spinner"></div>
+      </div>
+    </div>
+
+	<script>
+		var spinner;
+
+		function load() {
+			spinner = document.getElementById("spinner");
+			requestAnimationFrame(rotate);
+		}
+
+		function rotate() {
+			var m;
+			if(window.MSCSSMatrix) {
+				m = new MSCSSMatrix(spinner.style.transform);
+			} else {
+				m = new CSSMatrix(spinner.style.transform);
+			}
+			spinner.style.transform = m.rotate(10);
+			requestAnimationFrame(rotate);
+		}
+
+
+		window.addEventListener("load", load, false);
+	</script>
+
+	
+</body>
+</html>
+
