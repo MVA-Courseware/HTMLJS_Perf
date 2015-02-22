@@ -1,0 +1,172 @@
+html
+{
+	overflow: hidden;
+	-ms-touch-action: none;
+	-ms-content-zooming: none;
+}
+
+body
+{
+	background-image: url('images/Background.jpg');
+	margin: 0px;
+	padding: 0px;
+	font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+	font-size: 11pt;
+	color: #666;
+	letter-spacing: 0em;
+}
+
+aside[role="guages"]
+{
+	position: absolute;
+	text-align: center;
+	top: 18px;
+	left: 28px;
+	width: 80px;
+	color: Gray;
+}
+
+
+aside[role="guages"]>input[type="text"]:disabled
+{
+	width: 80px;
+	margin-bottom: -4px;
+	border: 0px;
+	
+	font-size: 24pt;
+	text-align:center;
+	
+	background-color: #c0c0c0; /* fallback */
+	background-color: rgba(180, 180, 180, .0);
+	color: #333;
+}
+
+
+aside[role="guages"]>label
+{
+	font-size: 9pt;
+	margin-bottom: 10px;
+}
+
+
+aside[role="control-panel"]
+{
+	font-size: 9pt;
+}
+
+
+aside[role="control-panel"]>section:nth-child(1)
+{
+	position: absolute;
+	top: 42px;
+	right: 150px;
+	width: 100px;
+}
+
+aside[role="control-panel"]>section:nth-child(2)
+{
+	position: absolute;
+	top: 42px;
+	right: 36px;
+	width: 100px;
+}
+
+#notes
+{
+	position: absolute;
+	top: 186px;
+	right: 48px;
+	width: 200px;
+	font-style: italic;
+}
+
+aside[role="control-panel"]>section>div:first-child
+{
+	font-weight: bold;
+}
+
+button
+{
+	color: #00c7ff;
+	border: 0px;
+	background-color: #c0c0c0; /* fallback */
+	background-color: rgba(180, 180, 180, .0);	
+	font-size: 9pt;	
+	text-decoration: none;
+	padding: 4px 0px;
+	min-height: inherit;
+	min-width: inherit;
+}
+
+button:hover
+{
+	color: #00c7ff;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#board
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-ms-touch-action: none;
+}
+
+#board img
+{
+	position: absolute;
+}
+
+#copyright
+{
+	color: Gray;
+	font-size: 8pt;
+	position: absolute;
+	bottom: 3px;
+	right: 6px;
+	width: 100%;
+	text-align: right;
+}
+
+@keyframes logoZoom {
+	0% {
+		transform: scale(1,1);
+	}
+	33% {
+		transform: scale(1.3, 1.3);
+	}
+	67% {
+		transform: scale(0.7, 0.7);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+.animateLogo {
+	animation: logoZoom 2s linear infinite;
+}
+
+
+@keyframes logoZoomDep {
+	0% {
+		left: 0px;
+	}
+	25% {
+		left: 10px;
+	}
+	50% {
+		left: 20px;
+	}
+	75% {
+		left: 10px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+.animateLogoDep {
+	animation: logoZoomDep 2s linear infinite;
+}

@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Flying Images</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--
+	SCRIPT
+	-->
+	<script src="lib/modernizr.custom.33516.js" type="text/javascript"></script>
+	<script src="lib/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="lib/prototype.js" type="text/javascript"></script>
+	<script src="src/scriptaculous.js" type="text/javascript"></script>
+	<script src="lib/angular.min.js" type="text/javascript"></script>
+	<script src="lib/dojo.js" type="text/javascript"></script>
+  	
+	
+	<!--
+	CSS 
+	-->
+	<link rel="stylesheet" type="text/css" href="css/ui-light.css" >
+	<link rel="stylesheet" type="text/css" href="css/ui-dark.css" >
+	
+	<link rel="stylesheet" type="text/css" href="css/dark-hive/jquery-ui-1.10.1.custom.css" >
+	<link rel="stylesheet" type="text/css" href="css/YUI/yui.css" >
+	
+	<link rel="stylesheet" type="text/css" href="default.css" >
+</head>
+<body>
+    
+	<div id="board">
+    </div>
+
+	<aside role="control-panel">
+		<section>
+			<div>Image Size</div>
+
+			<button id="UseDefaultImages">Default IE Logo</button>
+			<button id="UseHighResolutionImage">Large IE Logo</button>
+			<button id="UseMixImage" >Mix Photo</button>
+			<button id="UseMyBrowserLogo">My Browser</button>
+			<button id="UseBrowserLogos">All Browsers</button>
+		</section>
+		<section>
+			<div>Other</div>
+
+			<button id="ChangeCountUp">Increase</button>
+			<button id="ChangeCountDown">Decrease</button>
+			<button id="ZoomInButton">Zoom In</button>
+			<button id="ZoomNormalButton">Zoom Out</button>
+			<button id="ResetScene">Reset</button>
+
+		</section>
+		<span id="notes"></span>
+	</aside>
+	
+    <aside role="guages">
+        <input disabled type="text" id="fps"/>
+		<label for="fps">FPS</label>
+        
+		<input disabled type="text" id="countimages"/>
+		<label for="fps">Images</label>
+    </aside>
+	
+
+
+	<script type="text/javascript" src="default.js"></script>
+	
+	
+</body>
+</html>

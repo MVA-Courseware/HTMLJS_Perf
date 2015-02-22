@@ -1,15 +1,14 @@
-* Structured Markup demo 
-  * http://stevesouders.com/cuzillion/
-	  * add components at different place
-	  * observe the performance different in F12 UI responsiveness
-* Speed and Responsiveness demo
-  * Single vs Multiple library
-	  * single.html -- single library
-	  * many.html -- multiple library
-	  * run each html file and observe the difference in F12 UI responsiness
-* Know What Your App is Doing demo 
-	  * http://ie.microsoft.com/testdrive/Graphics/RequestAnimationFrame/Default.html# 
+
+* Web Page Test
+	* http://www.webpagetest.org/
+	* test http://bing.com 
+* CSS3 Demo
+	* CSS3 demo on IE test drive
+		* http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/Default.html
+		* Show CSS Gradients, Border Radius,Transforms,  and Transitions
+	* CSS3 animations demo
+		* dependent.html -- use JavaScript to implement the animation.
+		* independent.html -- use CSS animations to implement the animation.
+
 
  
-
-
