@@ -3,6 +3,3 @@
 		* http://ie.microsoft.com/testdrive/HTML5/KidsBook/Default.html
 	* Real life example Dev Docs shows you can save the doc in an offline mode by using AppCache
 		* http://devdocs.io/
-
-
- 
