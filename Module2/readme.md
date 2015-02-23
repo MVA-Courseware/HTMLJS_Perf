@@ -1,0 +1,2 @@
+* IE11 F12 Developer Tool will be demonstrated here<br>
+  F12 tool is part of IE, just hit function key F12 to open it
